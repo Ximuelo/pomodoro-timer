@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #3e3e3e;
+    --terciary-color: #4d4d4d;
+    --font-color: #fff;
+    --font-family: 'Pixelify Sans', sans-serif;
+    --bg-color: #1e1e1e;
+}
+
+[data-theme="Laia"] {
+    --primary-color: black;
+    --secondary-color: #FC6998;
+    --terciary-color: #4d4d4d;
+    --font-color: #fff;
+    --font-family: 'Pixelify Sans', sans-serif;
+    --bg-color: #add5fa;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 16px;
+}
+
+#theme-selector {
+    background-color: var(--secondary-color);
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: inherit;
+    color: inherit;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+#timer input {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 160px;
+    width: 100%;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#start-stop {
+    background-color: green;
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: inherit;
+    color: inherit;
+}
+
+
